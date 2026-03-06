@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: flask-app
-        image: worldvit/flask-app:03ebda2796120ae81fc6a4ccefbeb90e1e294d24
+        image: worldvit/flask-app:7ca7772dbb6609023942a5fd95db04a023ce49cd
         ports:
         - containerPort: 5000
         resources:  # HPA 작동을 위한 필수 설정
