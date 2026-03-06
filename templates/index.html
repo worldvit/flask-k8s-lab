@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitOps Flask App</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; border-top: 8px solid #2ecc71; }
+        h1 { color: #2c3e50; }
+        .status { color: #27ae60; font-weight: bold; }
+        .pod-info { margin-top: 20px; padding: 10px; background: #ebf5fb; border-radius: 6px; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Flask GitOps App</h1>
+        <p class="status">System Status: Healthy & Synced</p>
+        <div class="pod-info">
+            <strong>Current Pod:</strong> {{ pod_name }}<br>
+            <strong>App Version:</strong> {{ version }}
+        </div>
+        <p><small>Managed by ArgoCD & GitHub Actions</small></p>
+    </div>
+</body>
+</html>
