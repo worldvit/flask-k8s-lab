@@ -54,4 +54,4 @@ spec:
       name: cpu
       target:
         type: Utilization
-        averageUtilization: 50  # CPU 사용률 50% 초과 시 확장
+        averageUtilization: 20  # CPU 사용률 50% 초과 시 확장
